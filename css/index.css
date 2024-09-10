@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+html, body {
+  overflow-x: hidden; /* Desativa a rolagem horizontal */
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #5d4b33;
+}
+nav {
+    text-align: right;
+}
+#button1 {
+    background-color: #5d4b33;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+  position: relative;
+    font-size: 100px;
+}
+#button1:hover {
+    color: #000000;
+    background-color: #efecba;
+    transform: scale(1.1);
+}
+.desenvolvedor {
+    font-size: 20%;
+    position: relative;
+    top: 20px;
+    margin: 0px;
+    height:100;
+}
+header {
+  box-sizing: border-box;
+  justify-content: space-between;
+    display: flex;
+    background-color: #191917;
+    border-bottom: 1px solid #5d4b33;
+    font-size: 0.8rem
+    animation: slideIn 2s ease;
+}
+#logotipo {
+  position: relative;
+  left: 42%;
+    width: 10%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    display:inline-block;
+    color:#fff;
+    font-family: Ubuntu, sans-serif;
+    text-decoration: none;
+    margin-right: 50px;
+    transition: transform 0.3s, color 0.3s;
+}
+.nvg:hover {
+    color: #efecba;
+
+  }
+
+.nvg::after {
+    content: ''; /* Necessário para criar o pseudo-elemento */
+    display: block;
+    position: relative; /* Posiciona o sublinhado relativo ao link */
+    left: 0;
+    bottom: 0; /* Alinha o sublinhado na parte inferior do link */
+    width: 0; /* Começa com o sublinhado escondido */
+    height: 2px; /* Altura do sublinhado */
+    background-color: #efecba; /* Cor do sublinhado */
+    transition: width 0.3s ease; /* Transição suave para a largura */
+}
+
+.nvg:hover::after {
+    width: 40%; /* Expandir o sublinhado para a largura total do link */
+}
+section{
+  display: block;
+  height: 500px;
+  background-color: #191917;
+  color:#efecba;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .fade-in-text {
+    opacity: 0;            /* Inicialmente invisível */
+    animation: fadeIn 3s ease-in-out forwards; /* Aplica a animação */
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);  /* Fora da tela */
+    }
+    100% {
+      transform: translateY(0);  /* Na posição inicial */
+    }
+  }
+#section2 {
+    background-color: #867d62;
+}
